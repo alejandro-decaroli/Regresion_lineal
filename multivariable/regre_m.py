@@ -23,10 +23,10 @@ print()
 print(df.describe())
 
 # Plots
-# numerical_df = df.drop(["sex","smoker","region"], axis=1)
-# sns.heatmap(data=numerical_df.corr(), annot=True)
-# sns.pairplot(data=df, hue="sex")
-# plt.show()
+numerical_df = df.drop(["sex","smoker","region"], axis=1)
+sns.heatmap(data=numerical_df.corr(), annot=True)
+sns.pairplot(data=df, hue="sex")
+plt.show()
 
 ## Preprocessing
 
